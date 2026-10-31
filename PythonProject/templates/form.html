@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRO DE USUARIO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>REGISTRAR NUEVO USUARIO</h1>
+    <form method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="name" required><br>
+        <label>CORREO:</label>
+        <input type="email" name="email" required><br>
+        <input type="submit" value="Registrar">
+    </form>
+
+</body>
+</html>

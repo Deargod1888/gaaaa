@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MI WEB APP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>BIENVENIDO A MI APLICACIÓN WEB</h1>
+    <a href="{{ url_for('about') }}">SOBRE NOSOTROS</a>
+    <h2>USUARIOS REGISTRADOS</h2>
+    <ul>
+        {% for user in users %}
+        <li>{{ user[0] }} - {{ user[1] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('register') }}">REGISTRAR USUARIO</a>
+</body>
+</html>
